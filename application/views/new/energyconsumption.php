@@ -104,27 +104,27 @@
 								<tr>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-02.png">
+											<img src="assets/images/bee2-energy.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-02.png">
+											<img src="assets/images/bee2-lighting.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-02.png">
+											<img src="assets/images/bee2-gas.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-02.png">
+											<img src="assets/images/bee2-water.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-02.png">
+											<img src="assets/images/bee2-oxygen.png">
 										</div>
 									</td>
 								</tr>
@@ -146,27 +146,27 @@
 								<tr>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-03.png">
+											<img src="assets/images/bee2-51.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-03.png">
+											<img src="assets/images/bee2-lighting-bw.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-03.png">
+											<img src="assets/images/bee2-gas-bw.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-03.png">
+											<img src="assets/images/bee2-water-bw.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-03.png">
+											<img src="assets/images/bee2-oxygen-bw.png">
 										</div>
 									</td>
 								</tr>

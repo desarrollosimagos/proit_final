@@ -91,22 +91,22 @@
 								<tr>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-03.png">
+											<img src="assets/images/bee2-irrigation-bw.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-03.png">
+											<img src="assets/images/bee2-51.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-03.png">
+											<img src="assets/images/bee2-water-bw.png">
 										</div>
 									</td>
 									<td>
 										<div class="text-center">
-											<img src="assets/images/bee2-03.png">
+											<img src="assets/images/bee2-lighting-bw.png">
 										</div>
 									</td>
 								</tr>
