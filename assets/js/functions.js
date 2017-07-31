@@ -2299,11 +2299,11 @@ var SEMICOLON = SEMICOLON || {};
 					if( SEMICOLON.isMobile.any() && !element.hasClass('no-placeholder') ) {
 						var placeholderImg = elementVideo.attr('poster');
 
-						if( placeholderImg != '' ) {
+						/*if( placeholderImg != '' ) {
 							element.append('<div class="video-placeholder" style="background-image: url('+ placeholderImg +');"></div>')
-						}
+						}*/
 
-						elementVideo.hide();
+						//~ elementVideo.hide();
 					}
 				});
 			}

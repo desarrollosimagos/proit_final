@@ -25,10 +25,10 @@
 			<div class="col_half">
 
 				<div class="heading-block fancy-title nobottomborder title-bottom-border">
-					<h4>Nuestra <span>Misión</span>.</h4>
+					<h4><?php echo $this->lang->line('our_mission'); ?></h4>
 				</div>
 
-				<p class="text-justify">En PROIT TECHNOLOGIES, nos especializamos en ofrecerte herramientas digitales para dar soluciones de gestión para Smartcities y Smartindustries, donde su negocio podrá contar con la innovación tecnológica que tanto se hace prioritaria en ésta última década. Presentamos una gama completa y especializada de productos y servicios que se acomodaran en función a su área de negocios, impulsando aún más el desempeño de sus actividades comerciales.
+				<p class="text-justify"><?php echo $this->lang->line('our_mission_text'); ?>
 </p>
 
 			</div>
@@ -36,20 +36,20 @@
 			<div class="col_half col_last">
 
 				<div class="heading-block fancy-title nobottomborder title-bottom-border">
-					<h4>Nuestra <span>Visión</span>.</h4>
+					<h4><?php echo $this->lang->line('our_vision'); ?></h4>
 				</div>
 
-				<p class="text-justify">Ser la empresa líder en innovaciones tecnológicas, con la finalidad de seleccionar en el mercado mundial las mejores tecnologías que se adapten a su negocio. Y consolidarnos como pioneros en soluciones y respuestas con miras hacia el futuro.</p>
+				<p class="text-justify"><?php echo $this->lang->line('our_vision_text'); ?></p>
 
 			</div>
 
 			<div class="col_half" style="width:100%">
 
 				<div class="heading-block fancy-title nobottomborder title-bottom-border">
-					<h4>PROIT <span>TECHNOLOGIES</span>.</h4>
+					<h4><?php echo $this->lang->line('partneships'); ?></h4>
 				</div>
 
-				<p class="text-justify">En PROIT TECHNOLOGIES, somos precursores en el desarrollo exponencial de las Smartcities y Smartindustries, con relación a innovación, modernización tecnológica y digital con base en IoT. Asimismo, conectamos de manera directa, sencilla y actual a sus clientes con relación a su negocio. Estamos especializados en acoplarnos a cualquier tipo de área en donde usted requiera nuevas estrategias para el desenvolvimiento y rendimiento de sus actividades, logrando una disminución media de 30% en los costos de su negocio. 
+				<p class="text-justify"><?php echo $this->lang->line('partneships_text'); ?>
 				</p>
 			</div>
 

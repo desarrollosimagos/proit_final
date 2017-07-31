@@ -43,12 +43,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 					<!-- Top Links
 					============================================= -->
-					<div class="top-links">
+					<div class="top-links hidden-xs">
 						<ul>
-							<li><a href="https://proittechnologies.com:2096"><i class="icon-email3"></i></a></li>
+							<li><a href="https://proittechnologies.com:2096" target="_blank"><i class="icon-email3"></i></a></li>
+							<!--<li><a href="login">Login</a>-->
+							<?php
+							$ci = & get_instance();
+							if(isset($ci->session->userdata['logged_in_public'])){
+							?>
+							<li>
+								<span class="ws-nowrap"><i class="icon-logout icons"></i><a href="<?php echo base_url(); ?>public_perfil" id="cerrar"><?php echo $this->session->userdata['logged_in_public']['username']; ?></a></span>
+								|
+								<span class="ws-nowrap"><i class="icon-logout icons"></i><a href="<?php echo base_url(); ?>logout_public" id="cerrar">Salir</a></span>
+							</li>
+							<?php
+							}else{
+							?>
 							<li><a href="#"><?php echo $this->lang->line('menu_login_title'); ?></a>
 								<div class="top-link-section">
-									<form id="top-login" role="form">
+									<form id="top-login" action="login_public" method="post" role="form">
 										<div class="input-group" id="top-login-username">
 											<span class="input-group-addon"><i class="icon-user"></i></span>
 											<input type="email" id="username" name="username" class="form-control" placeholder="<?php echo $this->lang->line('menu_login_mail'); ?>" required="">
@@ -60,19 +73,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<label class="checkbox">
 										  <input type="checkbox" value="remember-me"><?php echo $this->lang->line('menu_login_remember'); ?>
 										</label>
+										<input type="hidden" id="alert_form1" value="<?php echo $this->lang->line('alert_form1'); ?>">
+										<input type="hidden" id="alert_form2" value="<?php echo $this->lang->line('alert_form2'); ?>">
+										<input type="hidden" id="alert_form3" value="<?php echo $this->lang->line('alert_form3'); ?>">
 										<button class="btn btn-info btn-block" type="submit" id="loguear"><?php echo $this->lang->line('menu_login_submit'); ?></button>
 									</form>
 								</div>
 							</li>
+							<li>
+								<span class="ws-nowrap">
+									<div class="error" style="color:red;">
+									<?php 
+									if(isset($_GET['error'])){
+										if($_GET['error'] == '1'){
+											echo $this->lang->line('alert_login1');
+										}else if($_GET['error'] == '2'){
+											echo $this->lang->line('alert_login2');
+										}else{
+											echo "";
+										}
+									}
+									?>
+									</div>
+								</span>
+							</li>
+							<?php
+							}
+							?>
 						</ul>
 					</div><!-- .top-links end -->
 
 				</div>
 
-				<div class="col_half fright col_last nobottommargin">
+				<!--<div class="col_half fright col_last nobottommargin">
 
-					<!-- Top Social
-					============================================= -->
 					<div class="top-links">
 						<ul>
 							<li>
@@ -94,9 +128,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</a>
 							</li>
 						</ul>
-					</div><!-- #top-social end -->
+					</div>
 
-				</div>
+				</div>-->
 
 			</div>
 
@@ -287,27 +321,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				   //~ swal("Disculpe,", "para continuar debe ingresar el nombre de usuario");
 				   //~ $('#username').parent('div').addClass('has-error');
 				   //~ $('#username').focus();
-				   alert("Disculpe, para continuar debe ingresar su nombre de usuario");
+				   alert($("#alert_form1").val());
 				   
 				} else if (!(regex.test($('#username').val().trim()))){
 					
 					//~ swal("Disculpe,", "el usuario debe ser una dirección de correo electrónico válida");
 					//~ $('#username').parent('div').addClass('has-error');
-					alert("Disculpe, el usuario debe ser una dirección de correo electrónico válida");
+					alert($("#alert_form2").val());
 					
 				} else if ($('#password').val().trim() === "") {
 				  
 				   //~ swal("Disculpe,", "para continuar debe ingresar una contraseña");
 				   //~ $('#password').parent('div').addClass('has-error');
-				   alert("Disculpe, para continuar debe ingresar su contraseña");
+				   alert($("#alert_form3").val());
 				   
 				} else {
-					alert($('#username').val().trim());
-					alert($('#password').val().trim());
+					//~ alert($('#username').val().trim());
+					//~ alert($('#password').val().trim());
 					// Enviamos el formulario
-					//~ $('#top-login').submit();
+					$('#top-login').submit();
 				}
 			});
+			
+			$("#video1, #video2").css('display','block');
+			$(".video-placeholder").hide();
+			$(".video-placeholder").css('display','none');
 		});
 		
 		// Marcar la sección actual
@@ -360,6 +398,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 	</script>
+	
+	<!--<script>
+		var video1 = document.getElementById('video1');
+		video1.addEventListener('click',function(){
+		  video1.play();
+		},false);
+		
+		var video2 = document.getElementById('video2');
+		video2.addEventListener('click',function(){
+		  video2.play();
+		},false);
+	</script>-->
 
 </body>
 </html>

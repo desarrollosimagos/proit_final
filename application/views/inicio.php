@@ -1,3 +1,9 @@
+<!--<style>
+#video1, #video2 {
+	display:block !important;
+}
+</style>-->
+
 <section id="slider" class="slider-parallax swiper_wrapper full-screen force-full-screen clearfix">
 
 	<div class="slider-parallax-inner">
@@ -18,15 +24,16 @@
 								<span class="hidden-xs">Intelligent Solutions for Demanding Cities</span>
 							</div>
 	
-							<a href="/smartcities" class="button button-border button-light button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>MORE</span></a>
+							<a href="<?php echo base_url();?>smartindustries" class="button button-border button-light button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>MORE</span></a>
 	
 						</div>
 					</div>
 				
 				
 					<div class="video-wrap">
-						<video poster="<?php echo assets_url(); ?>images/videos/explore.jpg" preload="auto" loop autoplay muted>
-							<source src='<?php echo assets_url(); ?>images/videos/cities.mp4' type='video/mp4' />
+						<video id="video1" poster="<?php echo assets_url(); ?>images/videos/explore.jpg" preload="auto" loop autoplay muted>
+							<source src='<?php echo assets_url(); ?>images/videos/cities.mp4'/>
+							Tu navegador no soporta HTML5 Video
 						</video>
 						<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
 					</div>
@@ -45,15 +52,16 @@
 								<span class="hidden-xs">4.0 INDUSTRY - Innovative Solutions for differentiated Markets</span>
 							</div>
 	
-							<a href="#" class="button button-border button-light button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>MORE</span></a>
+							<a href="<?php echo base_url();?>smartindustries" class="button button-border button-light button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>MORE</span></a>
 	
 						</div>
 					</div>
 					
 					
 					<div class="video-wrap">
-						<video poster="<?php echo assets_url(); ?>images/videos/explore.jpg" preload="auto" loop autoplay muted>
-							<source src='<?php echo assets_url(); ?>images/videos/video2.mp4' type='video/mp4' />
+						<video id="video2" poster="<?php echo assets_url(); ?>images/videos/explore.jpg" preload="auto" loop autoplay muted>
+							<source src='<?php echo assets_url(); ?>images/videos/explore.mp4'/>
+							Tu navegador no soporta HTML5 Video
 						</video>
 						<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
 					</div>

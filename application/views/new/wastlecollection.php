@@ -64,7 +64,7 @@
 					<br>
 					<br>
 					<p class="lead">
-                        Through the usage of IOT technology Compta offers a Cloud based “Green Spaces Management Solution” that
+                        Through the usage of IoT technology Compta offers a Cloud based “Green Spaces Management Solution” that
 						integrates in the same platform the most commonly required modules for the green space daily operations.
                     </p>
 				</div>
@@ -73,7 +73,7 @@
         
         <div class="line"></div>
         
-        <div class="container clearfix">
+        <div class="container clearfix nobottommargin">
             <div class="row clearfix">
 				<div class="col-lg-12">
 					<div class="heading-block">
@@ -81,7 +81,7 @@
 						<span>Core Software & Truck Operations Management (base module)</span>
 					</div>
 					
-					<div class="col_one_third">
+					<div class="col_one_third nobottommargin">
 						<h5>Main features available:</h5>
 						<ul class="iconlist iconlist-large iconlist-color">
 							<li><i class="icon-ok-sign"></i> Services Management:</li>
@@ -124,7 +124,7 @@
 						</ul>
 					</div>
 					
-					<div class="col_one_third">
+					<div class="col_one_third nobottommargin">
 						<ul class="iconlist iconlist-large iconlist-color">
 							<li><i class="icon-ok-sign"></i> Truck Operations:</li>
 							<li>- Real-time Truck Location</li>
@@ -155,7 +155,7 @@
 						<img src="<?php echo assets_url(); ?>images/waste_collection_management2.png">
 					</div>
 
-					<div class="col_one_third col_last">
+					<div class="col_one_third col_last nobottommargin">
 						<div class="panel panel-success">
 							<div class="panel-heading text-center"><h1>Markets</h1></div>
 							<div class="panel-body">
@@ -192,15 +192,41 @@
         
         <div class="line"></div>
         
+        <div class="container clearfix nobottommargin">
+            <div class="row clearfix nobottommargin">
+				<div class="col-lg-12">
+					<div class="heading-block">
+						<h1>AVAILABLE MODULES</h1>
+						<span>Waste Collection</span>
+					</div>
+					
+					<div class="col_one_third nobottommargin">
+						
+						<ul class="iconlist iconlist-large iconlist-color">
+							<li><i class="icon-ok-sign"></i> Containers Management Module (RFID)</li>
+							<li><i class="icon-ok-sign"></i> Container Filling Probes Module</li>
+							<li><i class="icon-ok-sign"></i> Conditioned Access Containers Module</li>
+							<li><i class="icon-ok-sign"></i> Truck Load-Weighing System Module</li>
+							<li><i class="icon-ok-sign"></i> Inclusion of other Vehicles in the Platform</li>
+							<li><i class="icon-ok-sign"></i> Real-time Fuel Volumes Reading</li>
+							<li><i class="icon-ok-sign"></i> Bee2Waste Mobile App</li>
+						</ul>
+						
+					</div>
+					
+				</div>
+			</div>
+        </div>        
+        
+        <div class="line"></div>
+        
         <div class="container clearfix">
             <div class="row clearfix">
 				<div class="col-lg-12">					
-					<div class="col_half">
-						<div class="col_half" style="padding-bottom:0px;">
-							<h3 class="text-left">Pay as you throw</h3>
-						</div>
-						<div class="col_half col_last" style="padding-bottom:0px;">
-							<h3 class="text-left">Ready solution</h3>
+					<div class="col_full">
+						<div class="col_full" style="padding-bottom:0px !important;">
+							<img src="<?php echo assets_url(); ?>images/pay-throw.png" style="padding-bottom:0px !important;">
+							<h3 class="text-right" style="padding-bottom:0px !important;">Ready solution</h3>
 						</div>
 						<p class="lead"  style="padding-top:0px;">
 							Pay as you throw (PAYT, also called trash metering, unit pricing,
@@ -215,21 +241,6 @@
 							Compta Bee2Waste is fully ready to operate under a PAYT
 							principle.
 						</p>
-					</div>
-
-					<div class="col_half col_last">
-						<div class="panel panel-success">
-							<h3 class="text-center">Available Modules</h3>
-							<ul class="iconlist iconlist-large iconlist-color">
-								<li>- Containers Management Module (RFID)</li>
-								<li>- Container Filling Probes Module</li>
-								<li>- Conditioned Access Containers Module</li>
-								<li>- Truck Load-Weighing System Module</li>
-								<li>- Inclusion of other Vehicles in the Platform</li>
-								<li>- Real-time Fuel Volumes Reading</li>
-								<li>- Bee2Waste Mobile App</li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</div>

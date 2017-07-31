@@ -26,7 +26,7 @@ $lang['link_ambiente'] = 'ENVIRONMENT';
 $lang['link_agriculture'] = 'AGRICULTURE';
 $lang['link_energia'] = 'ENERGY CONSUMPTION';
 $lang['link_greenspaces'] = 'GREEN SPACES';
-$lang['link_wastlecollection'] = 'WASTLE COLLECTION';
+$lang['link_wastlecollection'] = 'WASTE COLLECTION';
 $lang['link_fleetmanagement'] = 'FLEET MANAGEMENT';
 $lang['link_citizeninterface'] = 'CITIZEN INTERFACE';
 $lang['link_cargomanagement'] = 'CARGO MANAGEMENT';
@@ -53,3 +53,10 @@ $lang['menu_login_mail'] = 'Correo electr&oacute;nico';
 $lang['menu_login_password'] = 'Contrase&ntilde;a';
 $lang['menu_login_remember'] = 'Recordar';
 $lang['menu_login_submit'] = 'Iniciar';
+
+// Alerts
+$lang['alert_login1'] = 'Usuario o contraseña incorrectos';
+$lang['alert_login2'] = 'Disculpe, el usuario no tiene acceso, consulte con el administrador del sistema';
+$lang['alert_form1'] = 'Disculpe, para continuar debe ingresar su nombre de usuario';
+$lang['alert_form2'] = 'Disculpe, el usuario debe ser una dirección de correo electrónico válida';
+$lang['alert_form3'] = 'Disculpe, para continuar debe ingresar su contraseña';

@@ -20,9 +20,9 @@
 			<div class="row clearfix">
 				<div class="col-lg-5">
 					<div class="heading-block topmargin">
-						<h1>Ciudades Inteligentes e IOT</h1>
+						<h1><?php echo $this->lang->line('smartcities_page'); ?></h1>
 					</div>
-					<p class="lead">Las ciudades son sistemas cada vez más complejos, multidisciplinarias e inherentemente más conectadas. La forma en que la gestión de las ciudades se realiza dicta su calidad y condiciona positiva o negativamente su atractivo y crecimiento.</p>
+					<p class="lead"><?php echo $this->lang->line('smartcities_page_text'); ?></p>
 				</div>
 				<div class="col-lg-7">
 					<div style="position: relative; margin-bottom: -60px;" class="ohidden" data-height-lg="426" data-height-md="567" data-height-sm="470" data-height-xs="287" data-height-xxs="183">
